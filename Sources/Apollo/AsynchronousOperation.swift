@@ -1,11 +1,11 @@
 import Foundation
 
 class AsynchronousOperation: Operation {
-  @objc class func keyPathsForValuesAffectingIsExecuting() -> Set<String> {
+  class func keyPathsForValuesAffectingIsExecuting() -> Set<String> {
     return ["state"]
   }
   
-  @objc class func keyPathsForValuesAffectingIsFinished() -> Set<String> {
+  class func keyPathsForValuesAffectingIsFinished() -> Set<String> {
     return ["state"]
   }
   
